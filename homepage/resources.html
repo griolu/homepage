@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Dropdown menu for navigating to the different pages -->
+        <h1>Resources</h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info" id="home">Home</button>
+            <script>
+                document.querySelector('#home').onclick = function() {
+                    window.location.href = 'index.html'
+                }
+            </script>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="games.html">Games</a>
+                <a class="dropdown-item" href="music.html">Music</a>
+                <a class="dropdown-item" href="sports.html">Sports</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="resources.html">Resources</a>
+            </div>
+        </div>
+        <h2>These resources will be your saviour in IB</h2>
+        <ul>
+            <li><a href="https://www.ibdocuments.com/">IBDocuments</a></li>
+            <li><a href="https://freeexampapers.com/exam-papers/IB/">Past exams</a></li>
+            <li><a href="https://examsnap.io/">IB textbooks</a></li>
+            <li><a href="https://sites.google.com/view/revisionsessions/home?authuser=1">IB revision guides by students</a></li>
+            <li><a href="https://sites.google.com/view/ibonotes/">IB notes by students</a></li>
+            <li><a href="https://www.lanternaeducation.com/ib-blog/theory-of-knowledge-ib-guide-part-1/">ToK (because we don't pay attention in class)</a></li>
+            <li><a href="https://www.ibdocuments.com/exemplars/">IB IA and EE examplars</a></li>
+            <li>English books</li>
+            <ul>
+                <li><a href="https://www.pdfdrive.com/">PDF drive</a></li>
+                <li><a href="https://b-ok.cc/">z library</a></li>
+                <li><a href="http://libgen.rs/">Library Genesis</a></li>
+                <li><a href="http://www.loyalbooks.com/">Loyal Books</a></li>
+            </ul>
+        </ul>
+    </body>
+</html>

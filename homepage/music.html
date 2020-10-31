@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Dropdown menu for navigating to the different pages -->
+        <h1>Music</h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info" id="home">Home</button>
+            <script>
+                document.querySelector('#home').onclick = function() {
+                    window.location.href = 'index.html'
+                }
+            </script>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="games.html">Games</a>
+                <a class="dropdown-item" href="music.html">Music</a>
+                <a class="dropdown-item" href="sports.html">Sports</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <!-- Table for music when working -->
+        <p>These are some of the music that I enjoy when I work (I don't really listen to music when I work, though)</p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Music</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><iframe title="Animal Crossing" width="420" height="315" src="https://www.youtube.com/embed/I7G31t9TluE"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><iframe title="Maplestory 1" width="420" height="315" src="https://www.youtube.com/embed/U6Htl-qnp-o"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><iframe title="Maplestory 2" width="420" height="315" src="https://www.youtube.com/embed/MkXCcuc0MVI"></iframe></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Music for exercising-->
+        <p>These are some of the music that I listen to when exercising.</p>
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Music</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><iframe title="Dancing in the mood" width="420" height="315" src="https://www.youtube.com/embed/SHdR7skLg6E"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><iframe title="Hale Sola" width="420" height="315" src="https://www.youtube.com/embed/ByXnT26j0kg"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><iframe title="Peek-a-boo" width="420" height="315" src="https://www.youtube.com/embed/2q3Yaz0MxNg"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><iframe title="Seasons" width="420" height="315" src="https://www.youtube.com/embed/4HG_CJzyX6A"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td><iframe title="Thorn" width="420" height="315" src="https://www.youtube.com/embed/AoVt7Qe9t1s"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td><iframe title="Love battery" width="420" height="315" src="https://www.youtube.com/embed/0-1rdQXHadw"></iframe></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td><iframe title="When Flower Blooming Ends" width="420" height="315" src="https://www.youtube.com/embed/a7R5XAfFwSk"></iframe></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

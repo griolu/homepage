@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <link rel="icon" href="https://avatars2.githubusercontent.com/u/38792784"/>
+        <title>Geon's school life</title>
+    </head>
+    <body>
+        <!-- Dropdown menu for navigating to the different pages -->
+        <h1>Welcome to my home!</h1>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info" id="home">Home</button>
+            <script>
+                document.querySelector('#home').onclick = function() {
+                    window.location.href = 'index.html'
+                }
+            </script>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="games.html">Games</a>
+                <a class="dropdown-item" href="music.html">Music</a>
+                <a class="dropdown-item" href="sports.html">Sports</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <!-- Search bar for different sources -->
+        <h2>Use this to search up the things you really need</h2>
+        <form onsubmit="dictionaryOpen(); return false;">
+            <div class="form-row">
+                <div class="col">
+                    <select id="search" class="form-control">
+                        <option value="cmb" selected>Cambridge Dictionary</option>
+                        <option value="oxf">Oxford Dictionary</option>
+                        <option value="syn">Power Thesaurus</option>
+                        <option value="wr">Word Reference</option>
+                    </select>
+                    <script>
+                        let dictionaryQuery = "cmb";
+                        document.querySelector('#search').onchange = function() {
+                            dictionaryQuery = this.value;
+                        }
+                    </script>
+                </div>
+                <div class="col">
+                    <input type="text" id="wordQuery" class="form-control" placeholder="Word">
+                </div>
+            </div>
+        </form>
+        <script>
+            function dictionaryOpen() 
+            {
+                let wordQuery = document.querySelector("#wordQuery").value;
+                switch(dictionaryQuery)
+                {
+                    case "cmb":
+                        window.open("https://dictionary.cambridge.org/dictionary/english/" + wordQuery);
+                        break;
+                    case "oxf":
+                        window.open("https://www.lexico.com/en/definition/" + wordQuery);
+                        break;
+                    case "syn":
+                        window.open("https://www.powerthesaurus.org/" + wordQuery + "/synonyms");
+                        break;
+                    case "wr":
+                        window.open("https://www.wordreference.com/fren/" + wordQuery);
+                        break;
+                }
+            }
+        </script>
+
+        <h2>Who am I?</h2>
+        <p>Hey, I'm Geon, an extraordinary guy doing CS50. In this website you'll be able to see the different things I use:</p>
+        <ul>
+            <li>Resources for school and IB</li>
+            <li>Music for working or exercising</li>
+            <li>Games for entertainment</li>
+            <li>Sports for fun and exercise</li>
+        </ul>
+        <p>I hope you enjoy this website and take something away from it.</p>
+    </body>
+</html>

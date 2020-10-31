@@ -1,0 +1,45 @@
+.btn-group
+{
+    padding: 5px;
+    display: table;
+    margin: 0 auto;
+}
+
+.form-row
+{
+    padding: 5px;
+}
+
+.gamess
+{
+    width:540px; /* you can use % */
+    height: auto;
+}
+
+h1
+{
+    padding: 5px;
+    font-size: 50px;
+    text-align: center;
+    color: darkcyan;
+}
+
+h2
+{
+    padding: 5px;
+    text-align: center;
+    color: lightseagreen;
+}
+
+p
+{
+    margin: auto;
+    text-align: center;
+}
+
+ul
+{
+    display: table;
+    margin: 0 auto;
+}
+

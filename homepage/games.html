@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Dropdown menu for navigating to the different pages -->
+        <h1>Games</h1>
+        <p>These are some of my favourite games (not in any particular order).</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info" id="home">Home</button>
+            <script>
+                document.querySelector('#home').onclick = function() {
+                    window.location.href = 'index.html'
+                }
+            </script>
+            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="games.html">Games</a>
+                <a class="dropdown-item" href="music.html">Music</a>
+                <a class="dropdown-item" href="sports.html">Sports</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <!-- This is a table of the games I like -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Device</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Screenshots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>PC</td>
+                    <td><a href="https://archeageunchained.com/">ArcheAge Unchained</a></td>
+                    <td><img class="gamess" src="https://i.imgur.com/jWZ4OMr.jpg" alt="archeage"></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>PC</td>
+                    <td><a href="https://osu.ppy.sh/home">osu!</a></td>
+                    <td><img class="gamess" src="https://jscalc-blog.com/wp-content/uploads/2019/11/Osu-Mouse-DPI-To-Tablet-Area-Calculator.jpg" alt="osu!"></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>PC</td>
+                    <td><a href="https://na.leagueoflegends.com/en-us/">League of Legends (and Team Fight Tactics)</a></td>
+                    <td><img class="gamess" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_8.jpg" alt="LoL and TfT"></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Nintendo DS</td>
+                    <td>Kirby: Squeak Squad</td>
+                    <td><img class="gamess" src="https://i.ytimg.com/vi/VCH_1Mfxwc0/maxresdefault.jpg" alt="Kirby SS"></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Wii</td>
+                    <td>Kirby: Return to Dreamland</td>
+                    <td><img class="gamess" src="https://i1.wp.com/smashpad.com/wp-content/uploads/2011/11/i_30436.jpg?resize=620%2C340&ssl=1" alt="Kirby RtDl"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
